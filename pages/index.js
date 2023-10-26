@@ -19,6 +19,12 @@ import About from './components/About'
 import Experience from './components/Experience'
 import ProjectPreview from './components/ProjectPreview'
 
+// images
+import huntsc from '../public/images/huntsc.png';
+import nlp from '../public/images/nlp.png';
+import recapp from '../public/images/uscrecapp.png';
+import vision from '../public/images/vision.png';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +33,7 @@ export default function Home() {
   const tech = [
     "Javascript",
     "React.js",
-    "Node.js",
+    "NodeJS/ExpressJS",
     "Python",
     "Java",
     "C++"
@@ -61,15 +67,22 @@ export default function Home() {
             </p>
             {/* emojis */}
             <div className='flex flex-col gap-3 items-center lg:flex-row'>
+            <a href="mailto:jwtan@usc.edu" className="underline-none">
               <button className='bg-black text-white rounded-full font-small py-2 px-4 w-40 md:font-mx md:text-xl md:py-3 md:px-12'>
                 Say Hi
               </button>
-              <div className='flex gap-4'>
-                {/* <BsGlobe href='#' className='hover:cursor-pointer md:text-2xl' /> */}
-                <BsInstagram className='hover:cursor-pointer md:text-2xl' />
-                <BsLinkedin className='hover:cursor-pointer md:text-2xl' />
-                <BsGithub className='hover:cursor-pointer md:text-2xl' />
-              </div>
+            </a>
+            <div className='flex gap-4'>
+              <a href="https://www.instagram.com/ja.drian/" target="_blank" rel="noopener noreferrer" className='hover:cursor-pointer md:text-2xl'>
+                <BsInstagram />
+              </a>
+              <a href="https://www.linkedin.com/in/jadriantan/" target="_blank" rel="noopener noreferrer" className='hover:cursor-pointer md:text-2xl'>
+                <BsLinkedin />
+              </a>
+              <a href="https://github.com/jadriant" target="_blank" rel="noopener noreferrer" className='hover:cursor-pointer md:text-2xl'>
+                <BsGithub />
+              </a>
+            </div>
             </div>
           </div>
           {/* card 2 */}
@@ -84,30 +97,34 @@ export default function Home() {
         <section key="1" id="project" className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
           <ProjectPreview
             name="Sentiment Analysis with FNN & RNN"
-            description="In this project, I explore the performance of various deep learning models on a text classification task using Word2Vec features. I first pre-process the dataset and extract features using the Word2Vec model. These features serve as input to different deep learning architectures, namely a Multi-Layer Perceptron (MLP), a Simple RNN, a GRU (Gated Recurrent Unit), and an LSTM (Long Short-Term Memory) network. The goal is to compare the accuracy of these models in classifying the text data and identify the most effective architecture for our specific dataset. The performance metrics are visualized using a graph to provide a clear comparison among the different models."
-            imageUrl=""
+            description="This project aims to analyze customer reviews and determine their sentiment using various data preprocessing techniques and machine learning models."
+            imageUrl={nlp}
             bgColor="#6B5CE5"
             dark
+            githubLink="https://github.com/jadriant/ML-projects/tree/main/sentiment_analysis"
           />
           <ProjectPreview
             name="Color-Based Object Detection"
-            description="..."
-            imageUrl=""
+            description="The project uses unique color representations to detect colorful objects in images."
+            imageUrl={vision}
             bgColor="#313443"
             dark
-          />
-          <ProjectPreview
-            name=""
-            description="Next-gen social media"
-            imageUrl=""
-            bgColor="#D7DBE3"
+            githubLink="https://github.com/jadriant/ML-projects/tree/main/color-based_object_detection"
           />
           <ProjectPreview
             name="HuntSC"
-            description="Next-gen social media"
-            imageUrl=""
+            description="A platform for USC student orgs to find and add venues for events."
+            imageUrl={huntsc}
+            bgColor="#D7DBE3"
+            githubLink="https://github.com/jadriant/FullStack-projects/tree/main/huntsc"
+          />
+          <ProjectPreview
+            name="USCRecApp"
+            description="Book your spot at USC's rec centers with my user-friendly Android app, ensuring efficient capacity management and timely reminders."
+            imageUrl={recapp}
             bgColor="#4E4E57"
             dark
+            githubLink="https://github.com/jadriant/FullStack-projects/tree/main/USCRecApp"
           />
         </section>
 
@@ -186,9 +203,9 @@ export default function Home() {
           <span>
             {"© 2023 | Built and designed by Jadrian Tan"}
           </span>
-          {/* <Link href="#" className='my-2 h-auto w-[200px] text-center text-white bg-zinc-800 rounded-full'>
+          <Link href="#" className='my-2 h-auto w-[200px] text-center text-white bg-zinc-800 rounded-full block md:hidden'>
             Back to top
-          </Link> */}
+          </Link>
         </div>
       </section>
 

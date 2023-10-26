@@ -20,7 +20,9 @@ export default function Navbar() {
                 <Link href="#" className="text-black">Home</Link>
                 <Link href="#project">Projects</Link>
                 <Link href="#about">About</Link>
-                <a className="cursor-pointer">Resume</a>
+                <a href="https://drive.google.com/file/d/1vgDbSuRvxpXG0sUAC6Nv1Qu-hb5v684U/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    Resume
+                </a>
             </div>
 
         </nav>
