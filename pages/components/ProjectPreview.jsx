@@ -30,7 +30,7 @@ export default function ProjectPreview(props) {
                 <div className="flex justify-between">
                     <div>
                         <h2 className="font-medium text-lg dark:text-white">{projectname}</h2>
-                        <p className="text-sm text-zinc-500 dark:text-zinc-300">
+                        <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-300">
                             {description}
                         </p>
                     </div>

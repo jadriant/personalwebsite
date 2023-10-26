@@ -96,8 +96,8 @@ export default function Home() {
         {/* PROJECT SECTION */}
         <section key="1" id="project" className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
           <ProjectPreview
-            name="Sentiment Analysis with FNN & RNN"
-            description="This project aims to analyze customer reviews and determine their sentiment using various data preprocessing techniques and machine learning models."
+            name="Sentiment Analysis with ML"
+            description="The project analyzes customer reviews to gauge sentiment, utilizing data preprocessing and machine learning models."
             imageUrl={nlp}
             bgColor="#6B5CE5"
             dark
@@ -142,26 +142,28 @@ export default function Home() {
               I am a first-gen Malaysian tech trooper, currently enrolled at the University of Southern California. I'm pursuing a B.S. and M.S. in Computer Science, and I'm on track to graduate in May 2024.
             </p>
             <p className="md:text-xl my-[-40px]">Here are some technologies I have been Working With: </p>
-            <ul className="list-none grid grid-cols-2 gap-2 text-xl">
-              <li className="">
-                <span className="text-base font-extralight px-[1rem]">{"▹ "}</span>{"Javascript"}
+            <ul className="list-none grid grid-cols-2 gap-2 text-[10px] sm:text-xl">
+              <li>
+                <span className="font-extralight px-[1rem]">{"▹ "}</span>Javascript
               </li>
-              <li className="">
-                <span className="text-base font-extralight px-[1rem]">{"▹ "}</span>{"Java"}
+              <li>
+                <span className="font-extralight px-[1rem]">{"▹ "}</span>Java
               </li>
-              <li className="">
-                <span className="text-base font-extralight px-[1rem]">{"▹ "}</span>{"React.js"}
+              <li>
+                <span className="font-extralight px-[1rem]">{"▹ "}</span>React.js
               </li>
-              <li className="">
-                <span className="text-base font-extralight px-[1rem]">{"▹ "}</span>{"Node.js"}
+              <li>
+                <span className="font-extralight px-[1rem]">{"▹ "}</span>Node.js
               </li>
-              <li className="">
-                <span className="text-base font-extralight px-[1rem]">{"▹ "}</span>{"Python"}
+              <li>
+                <span className="font-extralight px-[1rem]">{"▹ "}</span>Python
               </li>
-              <li className="">
-                <span className="text-base font-extralight px-[1rem]">{"▹ "}</span>{"C++"}
+              <li>
+                <span className="font-extralight px-[1rem]">{"▹ "}</span>C++
               </li>
             </ul>
+
+
             {/* outside of work woohoo */}
             <p className="mt-[-20px] md:text-xl">
               Outside of work, you'll find me getting a good sweat session at the gym, exploring scenic hiking trails, and fearlessly experimenting in the kitchen.
@@ -199,14 +201,15 @@ export default function Home() {
 
       {/* FOOTER w/o ratio */}
       <section>
-        <div className='flex flex-col items-center font-extralight text-black text-xl my-4'>
+        <div className='flex flex-col items-center font-extralight text-black text-xs sm:text-xl my-4'>
           <span>
             {"© 2023 | Built and designed by Jadrian Tan"}
           </span>
-          <Link href="#" className='my-2 h-auto w-[200px] text-center text-white bg-zinc-800 rounded-full block md:hidden'>
+          <Link href="#" className=' text-xl my-2 h-auto w-[200px] text-center text-white bg-zinc-800 rounded-full block md:hidden'>
             Back to top
           </Link>
         </div>
+
       </section>
 
     </div>
