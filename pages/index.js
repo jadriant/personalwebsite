@@ -202,12 +202,13 @@ export default function Home() {
       {/* FOOTER w/o ratio */}
       <section>
         <div className='flex flex-col items-center font-extralight text-black text-xs sm:text-xl my-4'>
+          <Link href="#" className=' text-xl my-2 mb-4 h-auto w-[200px] text-center text-white bg-zinc-800 rounded-full block cursor-pointer duration-[500ms] hover:scale-110 md:hidden'>
+            Back to top
+          </Link>
           <span>
             {"© 2023 | Built and designed by Jadrian Tan"}
           </span>
-          <Link href="#" className=' text-xl my-2 h-auto w-[200px] text-center text-white bg-zinc-800 rounded-full block md:hidden'>
-            Back to top
-          </Link>
+          
         </div>
 
       </section>

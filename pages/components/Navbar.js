@@ -17,10 +17,10 @@ export default function Navbar() {
                 <LuSprout className="text-xl md:text-3xl"/>
             </div>
             <div className="flex flex-col text-zinc-400 text-lg gap-1 md:flex-row md:gap-5 md:text-3xl">
-                <Link href="#" className="text-black">Home</Link>
-                <Link href="#project">Projects</Link>
-                <Link href="#about">About</Link>
-                <a href="https://drive.google.com/file/d/193WBNN8pz6jOjXwCDPTAi_KneUwJ3ChS/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                <Link href="#" className="text-black cursor-pointer duration-[500ms] hover:scale-110">Home</Link>
+                <Link href="#project" className="cursor-pointer duration-[500ms] hover:scale-110">Projects</Link>
+                <Link href="#about" className="cursor-pointer duration-[500ms] hover:scale-110">About</Link>
+                <a href="https://drive.google.com/file/d/193WBNN8pz6jOjXwCDPTAi_KneUwJ3ChS/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cursor-pointer duration-[500ms] hover:scale-110">
                     Resume
                 </a>
             </div>
